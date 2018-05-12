@@ -52,28 +52,549 @@ header {
   transition: 0.2s;
 }
 
-.drop-menu {
+/*------------------------------------------------------------------------*/
+
+ul {
   display: flex;
-  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   justify-content: center;
 }
 
-.drop-menu>div {
-  width: 110px;
-  height: 20px;
-  align-items: center;
+li {
+  position: relative;
 }
 
-.drop-menu i {
-  padding-left: 5px;
+ul:after {
+  display: block;
+  content: ' ';
+  clear: both;
+  float: none;
 }
 
-.home>div {
+.menu a {
+  display: block;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+.menu>li {
+  padding: 20px;
+  border: 1px solid green;
+}
+
+.menu a:hover {
+  transition: .2s;
+  color: #95cac5;
+}
+
+                          /*------HOME--------*/
+/*HOME-SUBMENU*/
+
+.home-submenu {                              
   display: none;
+  position: absolute;
+  width: 200px;
+  top: 58px;
+  left: 0;
+  background-color: white;
+  border: 1px solid black;  
 }
 
-.home:hover>div {
-  display: flex;
-  flex-direction: column;
+.home-submenu>li {
+  padding: 7px ;
+}
+
+.menu > li:hover > .home-submenu {
+  display: block;
+}
+
+/*HOMEONE-SUBMENU*/
+
+.homeone-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.homeone-submenu>li {
+  padding: 7px;
+}
+
+.home-submenu > li:hover > .homeone-submenu {
+  display: block;
+}
+
+/*HOMEONEVERSION1-SUBMENU*/
+
+.homeoneversion1-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 203px;
+  top: 0;
+  border: 1px solid yellow;
+}
+
+.homeoneversion1-submenu > li {
+  padding: 7px;
+}
+
+.homeone-submenu > li:hover > .homeoneversion1-submenu {
+  display: block;
+}
+
+/*HOMEONEVERION2-SUBMENU*/
+
+.homeoneversion2-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 203px;
+  top: 0;
+  border: 1px solid yellow;
+}
+
+.homeoneversion2-submenu > li {
+  padding: 7px;
+}
+
+.homeone-submenu > li:hover > .homeoneversion2-submenu {
+  display: block;
+}
+
+/*HOMEONEVERION3-SUBMENU*/
+
+.homeoneversion3-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 203px;
+  top: 0;
+  border: 1px solid yellow;
+}
+
+.homeoneversion3-submenu > li {
+  padding: 7px;
+}
+
+.homeone-submenu > li:hover > .homeoneversion3-submenu {
+  display: block;
+}
+
+/*HOMETWO-SUBMENU*/
+
+.hometwo-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.hometwo-submenu>li {
+  padding: 7px;
+}
+
+.home-submenu > li:hover > .hometwo-submenu {
+  display: block;
+}
+
+/*HOMETWOVERSION1-SUBMENU*/
+
+.hometwoversion1-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 203px;
+  top: 0;
+  border: 1px solid yellow;
+}
+
+.hometwoversion1-submenu > li {
+  padding: 7px;
+}
+
+.hometwo-submenu > li:hover > .hometwoversion1-submenu {
+  display: block;
+}
+
+/*HOMETWOGRID3-SUBMENU*/
+
+.hometwogrid3-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 203px;
+  top: 0;
+  border: 1px solid yellow;
+}
+
+.hometwogrid3-submenu > li {
+  padding: 7px;
+}
+
+.hometwo-submenu > li:hover > .hometwogrid3-submenu {
+  display: block;
+}
+
+/*HOMETWOGRID2-SUBMENU*/
+
+.hometwogrid2-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 203px;
+  top: 0;
+  border: 1px solid yellow;
+}
+
+.hometwogrid2-submenu > li {
+  padding: 7px;
+}
+
+.hometwo-submenu > li:hover > .hometwogrid2-submenu {
+  display: block;
+}
+
+/*HOMETWOGRID4-SUBMENU*/
+
+.hometwofrid4-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 203px;
+  top: 0;
+  border: 1px solid yellow;
+}
+
+.hometwofrid4-submenu > li {
+  padding: 7px;
+}
+
+.hometwo-submenu > li:hover > .hometwofrid4-submenu {
+  display: block;
+}
+
+/*WITHOUTFEATURED-SUBMENU*/
+
+.withoutfeatured-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 203px;
+  top: 0;
+  border: 1px solid yellow;
+}
+
+.withoutfeatured-submenu > li {
+  padding: 7px;
+}
+
+.hometwo-submenu > li:hover > .withoutfeatured-submenu {
+  display: block;
+}
+
+/*HOMETHREE-SUBMENU*/
+
+.homethree-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.homethree-submenu>li {
+  padding: 7px;
+}
+
+.home-submenu > li:hover > .homethree-submenu {
+  display: block;
+}
+
+/*HOMEFOUR-SUBMENU*/
+
+.homefour-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.homefour-submenu>li {
+  padding: 7px;
+}
+
+.home-submenu > li:hover > .homefour-submenu {
+  display: block;
+}
+
+/*HOMEFIVE-SUBMENU*/
+
+.homefive-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.homefive-submenu>li {
+  padding: 7px;
+}
+
+.home-submenu > li:hover > .homefive-submenu {
+  display: block;
+}
+
+/*NORMALLAYOUT-SUBMENU*/
+
+.normallayout-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.normallayout-submenu>li {
+  padding: 7px;
+}
+
+.homefive-submenu > li:hover > .normallayout-submenu {
+  display: block;
+}
+
+/*GRIDTWO-SUBMENU*/
+
+.gridtwo-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.gridtwo-submenu>li {
+  padding: 7px;
+}
+
+.homefive-submenu > li:hover > .gridtwo-submenu {
+  display: block;
+}
+
+/*GRIDTHREE-SUBMENU*/
+
+.gridthree-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.gridthree-submenu>li {
+  padding: 7px;
+}
+
+.homefive-submenu > li:hover > .gridthree-submenu {
+  display: block;
+}
+
+/*HOMESIX-SUBMENU*/
+
+.homesix-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.homesix-submenu>li {
+  padding: 7px;
+}
+
+.home-submenu > li:hover > .homesix-submenu {
+  display: block;
+}
+
+/*MAGAZINELAYOUT-SUBMENU*/
+
+.magazinelayout-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.magazinelayout-submenu>li {
+  padding: 7px;
+}
+
+.home-submenu > li:hover > .magazinelayout-submenu {
+  display: block;
+}
+
+/*MAGAZINEVERSION1-SUBMENU*/
+
+.magazineversion1-submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.magazineversion1-submenu>li {
+  padding: 7px;
+}
+
+.magazinelayout-submenu > li:hover > .magazineversion1-submenu {
+  display: block;
+}
+
+                        /* --------FEATURES---------*/
+
+/*FEATURES-SUBMENU*/
+
+.features-submenu {                              
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 58px;
+  left: 0;
+  background-color: white;
+  border: 1px solid black;  
+}
+
+.features-submenu>li {
+  padding: 7px ;
+}
+
+.menu > li:hover > .features-submenu {
+  display: block;
+}
+
+/*FEATURES-STYLE*/
+
+.featured-style {                              
+  display: block;
+  position: absolute;
+  width: 208px;
+  left: -90px;
+  background-color: white;
+  border: 1px solid black;  
+}
+
+.featured-style>li {
+  padding: 7px ;
+}
+
+.menu > li:hover > .featured-style {
+  display: block;
+}
+
+/*POST-FORMAT*/
+
+.post-format {                              
+  display: block;
+  position: absolute;
+  width: 185px;
+  left: 119px;
+  background-color: white;
+  border: 1px solid black;  
+}
+
+.post-format>li {
+  padding: 7px ;
+}
+
+.menu > li:hover > .post-format {
+  display: block;
+}
+
+/*SHOP-PAGE-LAYOUT*/
+
+.shop-page-layout {                              
+  display: block;
+  position: absolute;
+  width: 205px;
+  left: 305px;
+  background-color: white;
+  border: 1px solid black;  
+}
+
+.shop-page-layout>li {
+  padding: 7px ;
+}
+
+.menu > li:hover > .shop-page-layout {
+  display: block;
+}
+
+/*OTHER-PAGE-LAYOUT*/
+
+.other-page-layout {                              
+  display: block;
+  position: absolute;
+  width: 236px;
+  left: 511px;
+  background-color: white;
+  border: 1px solid black;  
+}
+
+.other-page-layout>li {
+  padding: 7px ;
+}
+
+.menu > li:hover > .other-page-layout {
+  display: block;
+}
+
+                        /* --------EXTRA---------*/
+
+.extra-submenu {
+  display: none;
+  position: absolute;
+}
+
+.travel-submenu {
+  display: none;
+  position: absolute;
+}
+
+.lifestyle-submenu {
+  display: none;
+  position: relative;
 }
 
