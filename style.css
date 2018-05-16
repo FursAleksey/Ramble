@@ -2,6 +2,9 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 header {
@@ -9,6 +12,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
 }
+
 .left {
   display: flex;
   flex-direction: column;
@@ -82,7 +86,6 @@ ul:after {
 
 .menu>li {
   padding: 20px;
-  border: 1px solid green;
 }
 
 .menu a:hover {
@@ -100,7 +103,6 @@ ul:after {
   top: 58px;
   left: 0;
   background-color: white;
-  border: 1px solid black;  
 }
 
 .home-submenu>li {
@@ -139,7 +141,6 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
-  border: 1px solid yellow;
 }
 
 .homeoneversion1-submenu > li {
@@ -158,7 +159,6 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
-  border: 1px solid yellow;
 }
 
 .homeoneversion2-submenu > li {
@@ -177,7 +177,6 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
-  border: 1px solid yellow;
 }
 
 .homeoneversion3-submenu > li {
@@ -197,7 +196,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .hometwo-submenu>li {
@@ -216,7 +214,6 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
-  border: 1px solid yellow;
 }
 
 .hometwoversion1-submenu > li {
@@ -235,7 +232,6 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
-  border: 1px solid yellow;
 }
 
 .hometwogrid3-submenu > li {
@@ -254,7 +250,6 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
-  border: 1px solid yellow;
 }
 
 .hometwogrid2-submenu > li {
@@ -273,7 +268,6 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
-  border: 1px solid yellow;
 }
 
 .hometwofrid4-submenu > li {
@@ -292,7 +286,6 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
-  border: 1px solid yellow;
 }
 
 .withoutfeatured-submenu > li {
@@ -312,7 +305,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .homethree-submenu>li {
@@ -332,7 +324,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .homefour-submenu>li {
@@ -352,7 +343,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .homefive-submenu>li {
@@ -372,7 +362,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .normallayout-submenu>li {
@@ -392,7 +381,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .gridtwo-submenu>li {
@@ -412,7 +400,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .gridthree-submenu>li {
@@ -432,7 +419,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .homesix-submenu>li {
@@ -452,7 +438,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .magazinelayout-submenu>li {
@@ -472,7 +457,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .magazineversion1-submenu>li {
@@ -493,8 +477,7 @@ ul:after {
   width: 200px;
   top: 58px;
   left: 0;
-  background-color: white;
-  border: 1px solid black;  
+  background-color: white;  
 }
 
 .features-submenu>li {
@@ -512,8 +495,7 @@ ul:after {
   position: absolute;
   width: 208px;
   left: -90px;
-  background-color: white;
-  border: 1px solid black;  
+  background-color: white;  
 }
 
 .featured-style>li {
@@ -531,8 +513,7 @@ ul:after {
   position: absolute;
   width: 185px;
   left: 119px;
-  background-color: white;
-  border: 1px solid black;  
+  background-color: white; 
 }
 
 .post-format>li {
@@ -550,8 +531,7 @@ ul:after {
   position: absolute;
   width: 205px;
   left: 305px;
-  background-color: white;
-  border: 1px solid black;  
+  background-color: white;  
 }
 
 .shop-page-layout>li {
@@ -569,8 +549,7 @@ ul:after {
   position: absolute;
   width: 236px;
   left: 511px;
-  background-color: white;
-  border: 1px solid black;  
+  background-color: white; 
 }
 
 .other-page-layout>li {
@@ -583,18 +562,195 @@ ul:after {
 
                         /* --------EXTRA---------*/
 
-.extra-submenu {
+.extra-submenu {                              
   display: none;
   position: absolute;
+  width: 200px;
+  left: -2px;
+  top: 58px;
+  background-color: white; 
 }
 
-.travel-submenu {
+.extra-submenu>li {
+  padding: 7px ;
+}
+
+.menu > li:hover > .extra-submenu {
+  display: block;
+}
+
+                        /* --------pages-submenu---------*/
+
+.pages-submenu {                              
   display: none;
   position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;  
 }
+
+.pages-submenu>li {
+  padding: 7px ;
+}
+
+.extra-submenu > li:hover > .pages-submenu {
+  display: block;
+}
+
+                      /*---gallerypost-submenu----*/
+
+.gallerypost-submenu {                              
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;
+}
+
+.gallerypost-submenu>li {
+  padding: 7px ;
+}
+
+.extra-submenu > li:hover > .gallerypost-submenu {
+  display: block;
+}
+
+                        /*--headerstyle-submenu--*/
+
+.headerstyle-submenu {                              
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white; 
+}
+
+.headerstyle-submenu>li {
+  padding: 7px ;
+}
+
+.extra-submenu > li:hover > .headerstyle-submenu {
+  display: block;
+}
+
+                        /*---menustyle-submenu---*/
+
+.menustyle-submenu {                              
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white; 
+}
+
+.menustyle-submenu>li {
+  padding: 7px ;
+}
+
+.extra-submenu > li:hover > .menustyle-submenu {
+  display: block;
+}
+
+                        /*---portfolio-submenu---*/
+
+.portfolio-submenu {                              
+  display: none;
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0px;
+  background-color: white;  
+}
+
+.portfolio-submenu>li {
+  padding: 7px ;
+}
+
+.extra-submenu > li:hover > .portfolio-submenu {
+  display: block;
+}
+
+                        /*--------TRAVEL--------*/
+
+
+
+                        /*---------LIFESTYLE----------*/
 
 .lifestyle-submenu {
   display: none;
-  position: relative;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 58px;
+  left: -400px;
+  background: white;
 }
+
+.lifestyle-submenu img {
+  width: 175px;
+}
+
+.lifestyle-submenu div {
+  padding: 0px 15px;
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+
+.lifestyle-submenu div p {
+  margin: 10px 0px;;
+}
+
+.lifestyle-submenu .viewall a{
+  position: relative;
+  right: 450px;
+  top: 150px;
+  width: 100px;
+}
+
+.menu > li:hover .lifestyle-submenu{
+  display: flex;
+}
+
+                    /*------------ pictures*-----------*/
+.pictures {
+  display: flex;
+}
+
+.pictures img {
+  width: 100%;
+}
+
+.asdf {
+  display: flex;
+}
+
+.main-picture {
+  width: 1720px;
+}
+
+.reaching-for-the-sky, .photographers-best-friend {
+  width: 50%;
+}
+
+.reaching-for-the-sky {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.reaching-for-the-sky-text {
+  padding-bottom: 70px;
+  text-align:center;
+}
+
+.photographers-best-friend-text {
+  padding-top: 70px;
+  text-align:center;
+}
+
+                        /*----------travel-posts*--------*/
 
