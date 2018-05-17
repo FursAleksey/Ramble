@@ -5,6 +5,7 @@ body {
   padding-left: 0;
   margin-left: 0;
   margin-right: 0;
+  color: #787878;
 }
 
 header {
@@ -747,10 +748,147 @@ ul:after {
   text-align:center;
 }
 
+.reaching-for-the-sky-text a:first-child {
+  position: relative;
+  bottom: 30px;
+  text-decoration: none;
+  background-color: aquamarine;
+  color: white;
+  
+}
+
 .photographers-best-friend-text {
-  padding-top: 70px;
+  padding-top: 140px;
   text-align:center;
+}
+
+.photographers-best-friend-text a:first-child {
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+  text-decoration: none;
+  color: white;
+  background-color: aqua;
 }
 
                         /*----------travel-posts*--------*/
 
+.content {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.content-travel {
+  display: flex;
+  
+}
+
+.travel-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.travel-left img {
+  width: 100%;
+}
+
+.travel-left {
+  width: 500px;
+}
+
+.left > a {
+  font-size: 22px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.left span {
+  font-size: 11px;
+  text-align: center;
+}
+
+.travel-right {
+  padding: 0 30px;
+}
+
+.travel-right img {
+  width: 100px;
+}
+
+.post-small {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.post-small-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  line-height: 0;
+  font-size: 11px;
+}
+
+.content-right {
+  width: 280px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 11px; 
+}
+
+.content-right img {
+  width: 100%;
+}
+
+.popular-post {
+  display: flex;
+  padding: 20px 0;
+}
+
+.popular-post img {
+  width: 70px;
+}
+
+.popular-post-text {
+  line-height: 0;
+  padding-left: 20px;
+}
+
+.life-love-style {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  width: 850px;
+}
+
+.life-love-style img {
+  width: 100%;
+}
+
+.life-love {
+  width: 400px;
+}
+
+.life-style {
+  width: 400px;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
