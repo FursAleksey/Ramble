@@ -840,7 +840,7 @@ ul:after {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: 11px; 
+  font-size: 11px;
 }
 
 .content-right img {
@@ -857,9 +857,75 @@ ul:after {
 }
 
 .popular-post-text {
-  line-height: 0;
   padding-left: 20px;
 }
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 30px 0;
+}
+
+.categories h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+}
+
+.tagcloud {
+  padding-bottom: 30px;
+}
+
+.tagcloud h2 {
+  text-align: center; 
+  padding-bottom: 30px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.tags a {
+  padding: 5px 15px;
+  border: 1px solid #e1e1e1;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.tags a:hover {
+  transition: .3s;
+  background-color: aqua;
+  color: white;
+}
+
+.addunit {
+  padding-bottom: 30px;
+}
+
+.addunit h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.videos {
+  padding-bottom: 30px;
+}
+
+.videos h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
 
 .life-love-style {
   display: flex;
@@ -872,19 +938,252 @@ ul:after {
   width: 100%;
 }
 
+.life-love-style h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
 .life-love {
   width: 400px;
+}
+
+.life-love-header {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.life-love-header p {
+  font-size: 11px;
+  padding-top: 5px;
+}
+
+.title p {
+  text-align: center;
 }
 
 .life-style {
   width: 400px;
 }
 
+.life-style-header {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.life-style-header p {
+  font-size: 11px;
+  padding-top: 5px;
+}
+
+.life-love-style-theme {
+  line-height: .5;
+  padding: 5px;
+}
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.technology-content {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.technology img {
+  width: 100%;
+}
+
+.technology-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.technology-nav p {
+  padding-left: 600px;
+  padding-right: 
+}
+
+.left-side img {
+  width: 100px;
+}
+
+.left-side > h2 {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.mid-side {
+  width: 500px;
+  padding: 0 40px;
+}
+
+.mid-side p {
+  padding-bottom: 14px;
+}
+
+.right-side {
+  width: 280px;
+}
+
+.right-side h2 {
+  padding-bottom: 20px;
+}
+
+.socialnetwork {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.keepintouch h2 {
+  padding-left: 50px;
+}
+
+.socialnetwork-left {
+  padding-right: 40px;
+}
+
+.latest-post {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.latest-post img {
+  width: 100%;
+}
+
+.latest-post-left {
+  width: 400px;
+}
+
+.latest-post-left h2 {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.latest-post-left img {
+  padding-top: 15px;
+}
+
+
+
+.latest-post-mid {
+  width: 500px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.latest-post-mid-nav {
+  padding-bottom: 35px;
+  padding-left: 90px;
+}
+
+.latest-post-mid-post {
+  padding-bottom: 90px;
+}
+
+.older-post {
+  padding-top: 75px;
+}
+
+.newer-post {
+  padding-top: 50px;
+  text-align: right;
+}
+
+.latest-post-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.latest-post-right img {
+  width: 70px;
+  padding-right: 20px;
+}
+
+.latest-post-right-post {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-send {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-profile {
+  display: flex;
+  align-items: center;
+}
+
+.social-profile a {
+  padding: 0 15px;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+}
+
+.end img {
+  width: 100%;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.flicker-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flicker-images-photos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70px;
+}
+
+.recent-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.recent-works-photos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70px;
+}
+
 h1 {
-  font-size: 16px;
+  font-size: 22px;
 }
 
 h2 {
+  font-size: 16px;
+}
+
+h3 {
   font-size: 14px;
 }
 
