@@ -112,6 +112,11 @@ header {
   font-weight: 900;
 }
 
+.logo-left-content > a:hover {
+  
+}
+
+
 .logo-left-content {
   padding-left: 15px;
   width: 240px;
@@ -854,7 +859,10 @@ ul:after {
   padding: 25px 0;
 }
 
-
+.pictures-text-button-shell {
+  display: flex;
+  justify-content: center;
+}
 
 .pictures-text-button a{
   padding: 8px 20px;
@@ -864,7 +872,13 @@ ul:after {
   background-color: #95cac5;
 }
 
-
+.pictures-text-button {
+  border: 1px solid #95cac5;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+}
 
                         /*----------travel-posts*--------*/
 
@@ -1956,20 +1970,6 @@ ul:after {
   margin-right: 25px;
 }
 
-.flicker-image-img {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.flicker-image-img img {
-  width: 80px;
-  height: 80px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-}
-
 .recent-post {
   width: 14%;
   margin-left: 25px;
@@ -1993,9 +1993,15 @@ ul:after {
   text-align: center;
 }
 
+.end-img {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .end-img img {
-  width: 80px;
-  height: 80px;
+  width: 31%;
+  height: 70px;
   padding-right: 5px;
   padding-bottom: 5px;
 }
