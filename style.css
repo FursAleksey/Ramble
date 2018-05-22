@@ -153,6 +153,7 @@ nav i {
 }
 
 ul {
+  z-index: 1;
   display: flex;
   margin: 0;
   padding: 0;
@@ -193,7 +194,7 @@ ul:after {
                           /*------HOME--------*/
 /*HOME-SUBMENU*/
 
-.home-submenu {                              
+.home-submenu {    
   display: none;
   position: absolute;
   width: 200px;
@@ -219,7 +220,6 @@ ul:after {
   left: 200px;
   top: 0px;
   background-color: white;
-  border: 1px solid red;
 }
 
 .homeone-submenu>li {
@@ -238,6 +238,7 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
+  background: white;
 }
 
 .homeoneversion1-submenu > li {
@@ -256,6 +257,7 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
+  background: white;
 }
 
 .homeoneversion2-submenu > li {
@@ -274,6 +276,7 @@ ul:after {
   width: 200px;
   left: 203px;
   top: 0;
+  background: white;
 }
 
 .homeoneversion3-submenu > li {
@@ -825,15 +828,68 @@ ul:after {
 }
 
 .pictures-left {
+  position: relative;
   width: 50%;
 }
+
+.pictures-left-background {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: rgba(149,202,197,.8);
+  width: 100%;
+  height: 99.1%;
+  color: red;
+  transition: background-color: 1s;
+}
+
+.pictures-left:hover > .pictures-left-background {
+  display: flex;
+}
+
+.pictures-left-background-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.pictures-left-background .title1 {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  color: white;
+  border-bottom: 2px solid white;
+  width: 45px;
+}
+
+.pictures-left-background .title2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.pictures-left-background p {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.pictures-left-background p:hover {
+  cursor:default;
+}
+
 
 .pictures-mid {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 25%;
-  
+  overflow: hidden;
 }
 
 .pictures-right {
@@ -2026,15 +2082,35 @@ ul:after {
   font-weight: 400;
   position: relative;
   color: black;
+  z-index: 2;
 }
 
 .instagram-img {
+  position: relative;
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #95cac5;
-  opacity: .7;
 }
+
+.instagram-img-background {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(149,202,197,.7)
+}
+
+.instagram-img-background:hover {
+  transition: .3s;
+  background: rgba(149,202,197,.0);
+}
+
+.instagram-img-background:not(:hover) {
+  transition: .3s;
+  
+}
+
+
 
 .instagram-img img {
   width: 100%;
